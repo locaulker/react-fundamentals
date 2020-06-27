@@ -1,9 +1,9 @@
 import React from "react"
 
-function ChildComponent() {
+function ChildComponent(props) {
   return (
     <div>
-      <button>Greet Parent</button>
+      <button onClick={() => props.greetHandler("Jamie")}>Greet Parent</button>
     </div>
   )
 }
